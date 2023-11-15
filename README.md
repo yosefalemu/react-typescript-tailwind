@@ -1,4 +1,4 @@
-# react-typescript-tailwind Gym App
+# Gym App
 
 A React project with typescript and tailwind
 
