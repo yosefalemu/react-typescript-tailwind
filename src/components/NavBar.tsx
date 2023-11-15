@@ -21,7 +21,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   return (
     <nav>
       <div
-        className={`${navBackround} flex align-item justify-between w-full py-6 fixed top-0 z-30`}
+        className={`${navBackround} flex align-item justify-between w-full py-6 fixed top-0 z-30 `}
       >
         <div className="flex items-center justify-between mx-auto w-5/6">
           <div className="flex items-center justify-between w-full gap-16">
@@ -42,7 +42,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     setSelectedPage={setSelectedPage}
                   />
                   <NavLinkComponent
-                    page="About Us"
+                    page="Our Classes"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
@@ -74,7 +74,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
         {/* SideModal */}
         {!isAboveMediumScreen && isButtonClicked && (
-          <div className="fixed right-0 top-0 h-full w-[300px] bg-primary-100">
+          <div className="fixed right-0 top-0 h-fit w-[300px] bg-primary-100">
             {/* close button */}
             <div className="p-6 flex justify-end">
               <button
@@ -85,9 +85,24 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               </button>
             </div>
             {/* Menu items */}
-            <div className="flex flex-col gap-10 text-2xl ml-[33%]">
+            <div className="flex flex-col gap-10 text-2xl ml-[33%] py-24">
               <NavLinkComponent
                 page="Home"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <NavLinkComponent
+                page="Benefits"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <NavLinkComponent
+                page="Our Classes"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <NavLinkComponent
+                page="Contact Us"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
