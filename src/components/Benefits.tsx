@@ -43,7 +43,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
   return (
     <motion.section
       id="benefits"
-      className="mx-auto min-h-full w-5/6 py-20 overflow-x-hidden"
+      className="mx-auto min-h-full w-5/6 py-28 overflow-x-hidden"
       onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
     >
       {/* Heading */}
